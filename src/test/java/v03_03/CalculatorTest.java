@@ -8,6 +8,7 @@ public class CalculatorTest {
     @SuppressWarnings({"SimplifiableAssertion", "ConstantConditions"})
     @Test
     public void testMain() {
+        //noinspection TestFailedLine
         assertFalse(true);
     }
 }

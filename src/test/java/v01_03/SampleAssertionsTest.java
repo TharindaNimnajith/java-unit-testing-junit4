@@ -10,10 +10,12 @@ public class SampleAssertionsTest {
     public SampleAssertionsTest() {
     }
 
+    @SuppressWarnings("EmptyMethod")
     @BeforeClass
     public static void setUpClass() {
     }
 
+    @SuppressWarnings("EmptyMethod")
     @AfterClass
     public static void tearDownClass() {
     }

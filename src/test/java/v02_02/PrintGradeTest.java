@@ -9,6 +9,7 @@ public class PrintGradeTest {
     public void test1() {
         PrintGrade pg = new PrintGrade();
         String result = pg.print(90);
+        //noinspection TestFailedLine
         assertEquals("Incorrect Message was received", "You got an A!", result);
     }
 
@@ -23,6 +24,7 @@ public class PrintGradeTest {
     public void test3() {
         PrintGrade pg = new PrintGrade();
         String result = pg.print(90);
+        //noinspection TestFailedLine
         assertEquals("You got an A!", result);
     }
 
