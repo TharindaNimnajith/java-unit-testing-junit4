@@ -1,5 +1,7 @@
 package v01_03;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -8,6 +10,16 @@ public class SampleAssertionsTest {
     public SampleAssertionsTest() {
     }
 
+    @BeforeClass
+    public static void setUpClass() {
+    }
+
+    @AfterClass
+    public static void tearDownClass() {
+    }
+
+    // passing the error message as the first argument is optional
+
     @Test
     public void testAssertArrayEquals() {
         byte[] expected = "test".getBytes();
@@ -15,46 +27,46 @@ public class SampleAssertionsTest {
         assertArrayEquals("failure - byte arrays not same", expected, actual);
     }
 
+    // checks that two primitives/objects are equal
     @Test
     public void testAssertEquals() {
         assertEquals("failure - strings are not equal", "text", "text");
-        //Checks that two primitives/objects are equal.
     }
 
+    // checks that a condition is true
+    @Test
+    public void testAssertTrue() {
+        assertTrue("failure - should be true", true);
+    }
+
+    // checks that a condition is false
     @Test
     public void testAssertFalse() {
         assertFalse("failure - should be false", false);
-        //Checks that a condition is false.
     }
 
+    // checks that an object is null
+    @Test
+    public void testAssertNull() {
+        assertNull("should be null", null);
+    }
+
+    // checks that an object is not null
     @SuppressWarnings("ObviousNullCheck")
     @Test
     public void testAssertNotNull() {
         assertNotNull("should not be null", new Object());
-        //Checks that an object isn't null.
-    }
-
-    @Test
-    public void testAssertNotSame() {
-        assertNotSame("should not be same Object", new Object(), new Object());
-    }
-
-    @Test
-    public void testAssertNull() {
-        assertNull("should be null", null);
-        //Checks that an object is null.
     }
 
     @SuppressWarnings("UnnecessaryBoxing")
     @Test
     public void testAssertSame() {
-        Integer aNumber = Integer.valueOf(62);
-        assertSame("should be same", aNumber, aNumber);
+        Integer a = Integer.valueOf(62);
+        assertSame("should be same", a, a);
     }
 
     @Test
-    public void testAssertTrue() {
-        assertTrue("failure - should be true", true);
-        //Checks that a condition is true.
+    public void testAssertNotSame() {
+        assertNotSame("should not be same Object", new Object(), new Object());
     }
 }
