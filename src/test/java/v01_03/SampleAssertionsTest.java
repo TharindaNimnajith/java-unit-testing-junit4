@@ -18,12 +18,11 @@ public class SampleAssertionsTest {
     public static void tearDownClass() {
     }
 
-    // passing the error message as the first argument is optional
-
     @Test
     public void testAssertArrayEquals() {
         byte[] expected = "test".getBytes();
         byte[] actual = "test".getBytes();
+        // passing the error message as the first argument is optional
         assertArrayEquals("failure - byte arrays not same", expected, actual);
     }
 

@@ -1,4 +1,4 @@
-package v02_01;
+package v02_02;
 
 public class PrintGrade {
     public String print(int grade) {

@@ -1,24 +1,10 @@
 package v02_02;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import v02_01.PrintGrade;
 
 import static org.junit.Assert.assertEquals;
 
 public class PrintGradeTest {
-    public PrintGradeTest() {
-    }
-
-    @BeforeClass
-    public static void setUpClass() {
-    }
-
-    @AfterClass
-    public static void tearDownClass() {
-    }
-
     @Test
     public void test1() {
         PrintGrade pg = new PrintGrade();

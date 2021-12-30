@@ -41,7 +41,7 @@ public class ParameterizedTest {
     }
 
     @Test
-    public void test_addTwoNumbers() {
+    public void testAddTwoNumbers() {
         assertThat(MathUtils.add(numA, numB), is(expected));
     }
 }
