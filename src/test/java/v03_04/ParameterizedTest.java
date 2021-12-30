@@ -17,7 +17,7 @@ public class ParameterizedTest {
     private final int numB;
     private final int expected;
 
-    // Inject via constructor
+    // inject via constructor
     // for {8, 2, 10}, numA = 8, numB = 2, expected = 10
     public ParameterizedTest(int numA, int numB, int expected) {
         this.numA = numA;
